@@ -40,16 +40,16 @@ function createUsersList(res) {
 function userCardTemplate(user) {
   return `
   <div class="card mb-3">
-	<div class="card-body">
-		<h5 class="card-title">${user.name}</h5>
-			<ul class="list-group list-group-flush">
-				<li class="list-group-item"><b>Email:</b> ${user.email}</li>
-				<li class="list-group-item"><b>Phone number: </b> ${user.phone}</li>
-			</ul>
-			<div class="card-footer text-muted">Website: <a href="#"> ${user.website}</a></div>
-	</div>
-</div>
-`;
+   <div class="card-body">
+     <h5 class="card-title">${user.name}</h5>
+       <ul class="list-group list-group-flush">
+	<li class="list-group-item"><b>Email:</b> ${user.email}</li>
+	<li class="list-group-item"><b>Phone number: </b> ${user.phone}</li>
+       </ul>
+       <div class="card-footer text-muted">Website: <a href="#"> ${user.website}</a></div>
+     </div>
+   </div>
+ `;
 }
 
 // отправка POST запроса
